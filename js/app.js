@@ -25,15 +25,23 @@ document.getElementById('calculater').addEventListener('click', function () {
 
     // Error handle 
     if (totalCalculation.value < 0) {
-        alert('Please enter a valid number grater than 0')
-    }
-    else if (totalCalculation.value != Number) {
         alert('Please enter a valid number')
     }
 });
 
 // saving part 
+/* function saveBtn() {
+    const remaineBalance = document.getElementById('total-balance')
+    const remaineBalanceTotal = parseInt(remaineBalance.value)
+    const saveInput = document.getElementById('save-btn');
+    const saveInputText = saveInput.value;
+    const saveTotal = parseInt(saveInputText)
+    const remaine = saveTotal % remaineBalanceTotal;
+    return remaine
+
+}
 document.getElementById('save-btn').addEventListener('click', function () {
-    console.log('clicked')
-})
+    const remaineTotal = saveBtn()
+    console.log(remaineTotal)
+}) */
 
