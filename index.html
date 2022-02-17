@@ -31,11 +31,15 @@
         </nav>
     </header>
     <hr>
+
+
+
+
     <!-- section start      -->
     <section id="container">
         <!-- images section  -->
         <div id="photo-section" class="flex w-1/2 ">
-            <img class="rounded-xl" src="images/img-5.png" alt="">
+            <img class="rounded-xl" src="images/img-4.jpg" alt="">
         </div>
 
         <!-- Calculate section  -->
@@ -48,23 +52,23 @@
                 <form class="text-center">
                     <p>
                         <label>income:
-                            <input class="mt-2 border rounded p-1" type="text" placeholder="10000">
+                            <input id="my-income" class="mt-2 border rounded p-1" type="text" placeholder="10000">
                         </label>
                     </p>
                     <p class="text-extrabold text-2xl text-center my-2">Expenses</p>
                     <p>
                         <label>food:
-                            <input class=" border rounded p-1" type="text" placeholder="5000">
+                            <input id="food-input" class=" border rounded p-1" type="text" placeholder="5000">
                         </label>
                     </p>
                     <p>
                         <label>Rent:
-                            <input class="mt-2 border rounded p-1" type="text" placeholder="3000">
+                            <input id="rent-input" class="mt-2 border rounded p-1" type="text" placeholder="3000">
                         </label>
                     </p>
                     <p>
                         <label>Other:
-                            <input class="mt-2 border rounded p-1" type="text" placeholder="2000">
+                            <input id="other-input" class="mt-2 border rounded p-1" type="text" placeholder="2000">
                         </label>
                     </p>
                 </form>
@@ -72,9 +76,10 @@
                     Calculate area
                 ------- -->
                 <div>
-                    <button class="rounded-md ml-12  text-xl text-orange-100 bg-blue-500 p-1 m-3 ">Calculate</button>
-                    <p class="text-center">Total Expenses: 2000</p>
-                    <p class="text-center">Balance: 2000</p>
+                    <button id="calculater"
+                        class="rounded-md ml-12  text-xl text-orange-100 bg-blue-500 p-1 m-3 ">Calculate</button>
+                    <p class="text-center">Total Expenses: <span id="total-expenses"></span> </p>
+                    <p class="text-center">Balance: <span id="total-balance"></span> </p>
                 </div>
 
                 <!----------- 
@@ -94,6 +99,11 @@
                 <p class="text-center ">Remaing Balance: </p>
             </div>
         </div>
+
+
+
+
+
     </section>
     <script src="js/app.js"></script>
 </body>
