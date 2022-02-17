@@ -11,7 +11,7 @@
     <!----------------Tailwind link----------------------->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .main {
+        #container {
             padding: 50px 20px;
             background-color: rgb(239, 217, 252);
             display: flex;
@@ -35,6 +35,10 @@
         .login a:hover {
             color: rgb(104, 104, 211)
         }
+
+        input {
+            border: 1px solid black;
+        }
     </style>
 </head>
 
@@ -42,7 +46,7 @@
     <header>
         <nav class="py-7 flex justify-between">
             <div class="logo">
-                <h1><a class="text-3xl text-extrabold text-blue-400" href="/">Personl Bank</a></h1>
+                <h1><a class="text-3xl text-extrabold text-blue-400" href="/">Personal Bank</a></h1>
             </div>
             <ul class="flex space-x-4">
                 <li><a href="/">Home</a></li>
@@ -56,8 +60,7 @@
             </div>
         </nav>
     </header>
-    <hr>
-    <section class="main mt-2">
+    <section id="container">
         <!-- images section  -->
         <div class="flex w-1/2 ">
             <img class="rounded-xl" src="images/img-5.png" alt="">
@@ -65,49 +68,58 @@
 
         <!-- Calculate section  -->
         <div class="flex w-1/2 justify-evenly">
-            <div class="">
-                <p class="text-bold text-center">Income</p>
+            <!-- -------------- 
+             From section
+            -------------    -->
+            <div>
+                <p class="text-extrabold text-2xl text-center">Income</p>
                 <form class="text-center">
                     <p>
                         <label>income:
-                            <input class="mt-2 border rounded" type="text" name="customer_name" required>
+                            <input class="mt-2 border rounded p-1" type="text" placeholder="10000">
                         </label>
                     </p>
-                    <p class="text-bold text-center my-2">Expenses</p>
+                    <p class="text-extrabold text-2xl text-center my-2">Expenses</p>
                     <p>
                         <label>food:
-                            <input class="mt-2 border rounded" type="text" name="customer_name" required>
+                            <input class=" border rounded p-1" type="text" placeholder="5000">
                         </label>
                     </p>
                     <p>
                         <label>Rent:
-                            <input class="mt-2 border rounded" type="tel" name="phone_number">
+                            <input class="mt-2 border rounded p-1" type="text" placeholder="3000">
                         </label>
                     </p>
                     <p>
                         <label>Other:
-                            <input class="mt-2 border rounded" type="email" name="email_address">
+                            <input class="mt-2 border rounded p-1" type="text" placeholder="2000">
                         </label>
                     </p>
                 </form>
-
-                <div class="text-center">
-                    <button class="rounded-md text-center bg-blue-500 px-4 m-3 ">Calculate</button>
+                <!---------------- 
+                    Calculate area
+                ------- -->
+                <div>
+                    <button class="rounded-md ml-12  text-xl text-orange-100 bg-blue-500 p-1 m-3 ">Calculate</button>
                     <p class="text-center">Total Expenses: 2000</p>
-                    <p class="text-center">Blance: 2000</p>
+                    <p class="text-center">Balance: 2000</p>
                 </div>
-                <!----------- Saveing section ----------- -->
+
+                <!----------- 
+                    Saveing section 
+                 ----------- -->
+
                 <div class="flex my-4">
                     <p>
                         <label for="save">Save:</label>
-                        <input class="rounded-md " type="text" id="save" name="save" maxlength="4" size="4">
+                        <input class="rounded-md p-1" type="text" placeholder="20" id="save" name="save" maxlength="4"
+                            size="4">
                     </p>
                     <span class="mx-2">%</span>
-                    <button class="rounded-md px-4 bg-blue-500 ">Save</button>
-
+                    <button class="rounded-md px-4 bg-blue-500 text-orange-100 ">Save</button>
                 </div>
                 <p class="text-center ">Saving Amount: </p>
-                <p class="text-center ">Remaing Blance: </p>
+                <p class="text-center ">Remaing Balance: </p>
             </div>
         </div>
     </section>
