@@ -12,18 +12,28 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         .main {
-            background-color: rgb(42, 56, 56);
+            padding: 50px 20px;
+            background-color: rgb(239, 217, 252);
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 100vh;
         }
 
-        .box {
-            /* height: 50%; */
-            width: 80%;
-            /* background-color: blue; */
-            /* padding: 20px; */
+        nav ul li a {
+            font-size: 1.3rem;
+        }
+
+        nav ul li a:hover {
+            color: rgb(105, 105, 233);
+        }
+
+        .login a {
+            font-size: 1.3rem;
+            padding: 5px 10px;
+        }
+
+        .login a:hover {
+            color: rgb(104, 104, 211)
         }
     </style>
 </head>
@@ -46,14 +56,15 @@
             </div>
         </nav>
     </header>
-    <br>
-    <section class="main">
+    <hr>
+    <section class="main mt-2">
         <!-- images section  -->
-        <div class="box ">
-            <img src="images/img-5.png" alt="">
+        <div class="flex w-1/2 ">
+            <img class="rounded-xl" src="images/img-5.png" alt="">
         </div>
+
         <!-- Calculate section  -->
-        <div class="box ml-4  flex justify-center">
+        <div class="flex w-1/2 justify-evenly">
             <div class="">
                 <p class="text-bold text-center">Income</p>
                 <form class="text-center">
@@ -62,7 +73,7 @@
                             <input class="mt-2 border rounded" type="text" name="customer_name" required>
                         </label>
                     </p>
-                    <p class="text-bold text-center my-4">Expenses</p>
+                    <p class="text-bold text-center my-2">Expenses</p>
                     <p>
                         <label>food:
                             <input class="mt-2 border rounded" type="text" name="customer_name" required>
@@ -80,23 +91,23 @@
                     </p>
                 </form>
 
-                <div class="flex flex-col justify-center">
-                    <button class="rounded-md px-2 bg-blue-300 ">Calculate</button>
+                <div class="text-center">
+                    <button class="rounded-md text-center bg-blue-500 px-4 m-3 ">Calculate</button>
                     <p class="text-center">Total Expenses: 2000</p>
                     <p class="text-center">Blance: 2000</p>
                 </div>
                 <!----------- Saveing section ----------- -->
-                <div class="flex">
+                <div class="flex my-4">
                     <p>
                         <label for="save">Save:</label>
                         <input class="rounded-md " type="text" id="save" name="save" maxlength="4" size="4">
                     </p>
                     <span class="mx-2">%</span>
-                    <button class="rounded-md px-4 bg-blue-500">Save</button>
+                    <button class="rounded-md px-4 bg-blue-500 ">Save</button>
 
                 </div>
-                <p class="text-center">Saving Amount: </p>
-                <p class="text-center">Remaing Blance: </p>
+                <p class="text-center ">Saving Amount: </p>
+                <p class="text-center ">Remaing Blance: </p>
             </div>
         </div>
     </section>
