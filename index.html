@@ -14,23 +14,46 @@
         .main {
             background-color: rgb(42, 56, 56);
             display: flex;
-            justify-content: center;
-            height: 80vh;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
         }
 
         .box {
             /* height: 50%; */
-            width: 50%;
+            width: 80%;
             /* background-color: blue; */
-            padding: 20px;
+            /* padding: 20px; */
         }
     </style>
 </head>
 
 <body>
-    <div class="main">
-        <div class="box bg-red-300"><img src="images/img-5.png" alt=""></div>
-        <div class="box ml-4 bg-red-300 flex justify-center">
+    <header>
+        <nav class="py-7 flex justify-between">
+            <div class="logo">
+                <h1><a class="text-3xl text-extrabold text-blue-400" href="/">Personl Bank</a></h1>
+            </div>
+            <ul class="flex space-x-4">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contac</a></li>
+            </ul>
+            <div class="login">
+                <a href="/">login</a>
+                <a href="/">Signup</a>
+            </div>
+        </nav>
+    </header>
+    <br>
+    <section class="main">
+        <!-- images section  -->
+        <div class="box ">
+            <img src="images/img-5.png" alt="">
+        </div>
+        <!-- Calculate section  -->
+        <div class="box ml-4  flex justify-center">
             <div class="">
                 <p class="text-bold text-center">Income</p>
                 <form class="text-center">
@@ -76,7 +99,7 @@
                 <p class="text-center">Remaing Blance: </p>
             </div>
         </div>
-    </div>
+    </section>
     <script src="js/app.js"></script>
 </body>
 
