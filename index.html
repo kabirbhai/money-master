@@ -33,13 +33,13 @@
         <div class="box ml-4 bg-red-300 flex justify-center">
             <div class="">
                 <p class="text-bold text-center">Income</p>
-                <form class="">
+                <form class="text-center">
                     <p>
                         <label>income:
                             <input class="mt-2 border rounded" type="text" name="customer_name" required>
                         </label>
                     </p>
-                    <p class="text-bold text-center">Income</p>
+                    <p class="text-bold text-center my-4">Expenses</p>
                     <p>
                         <label>food:
                             <input class="mt-2 border rounded" type="text" name="customer_name" required>
@@ -51,12 +51,29 @@
                         </label>
                     </p>
                     <p>
-                        <label>Cloths:
+                        <label>Other:
                             <input class="mt-2 border rounded" type="email" name="email_address">
                         </label>
                     </p>
                 </form>
 
+                <div class="flex flex-col justify-center">
+                    <button class="rounded-md px-2 bg-blue-300 ">Calculate</button>
+                    <p class="text-center">Total Expenses: 2000</p>
+                    <p class="text-center">Blance: 2000</p>
+                </div>
+                <!----------- Saveing section ----------- -->
+                <div class="flex">
+                    <p>
+                        <label for="save">Save:</label>
+                        <input class="rounded-md " type="text" id="save" name="save" maxlength="4" size="4">
+                    </p>
+                    <span class="mx-2">%</span>
+                    <button class="rounded-md px-4 bg-blue-500">Save</button>
+
+                </div>
+                <p class="text-center">Saving Amount: </p>
+                <p class="text-center">Remaing Blance: </p>
             </div>
         </div>
     </div>
